@@ -1,0 +1,94 @@
+{
+    "name": "zvestaphp/attributes",
+    "description": "Rinvex Attributes is a robust, intelligent, and integrated Entity-Attribute-Value model (EAV) implementation for Laravel Eloquent, with powerful underlying for managing entity attributes implicitly as relations with ease. It utilizes the power of Laravel Eloquent, with smooth and seamless integration.",
+    "keywords": [
+        "eav",
+        "eloquent",
+        "laravel",
+        "dynamic",
+        "robust",
+        "schema",
+        "model",
+        "value",
+        "entity",
+        "database",
+        "attribute",
+        "integrated",
+        "intelligent",
+        "entity-attribute-value"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@zvesta.com",
+        "issues": "https://github.com/zvestaphp/attributes/issues",
+        "source": "https://github.com/zvestaphp/attributes",
+        "docs": "https://github.com/zvestaphp/attributes/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "zvesta LLC",
+            "homepage": "https://zvesta.com",
+            "email": "help@zvesta.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "Israel Ortuño",
+            "email": "israel@devio.es"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/zvestaphp/attributes/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.0.0",
+        "illuminate/support": "5.5.0",
+        "illuminate/database": "5.5.0",
+        "spatie/laravel-sluggable": "^2.0.0",
+        "spatie/eloquent-sortable": "^3.4.0",
+        "spatie/laravel-translatable": "^2.0.0",
+        "jeremeamia/superclosure": "^2.3.0",
+        "zvestaphp/cacheable": "dev-master",
+        "watson/validating": "^3.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0.0",
+        "illuminate/container": "~5.5.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Rinvex\\Attributes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Rinvex\\Attributes\\Providers\\AttributesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
